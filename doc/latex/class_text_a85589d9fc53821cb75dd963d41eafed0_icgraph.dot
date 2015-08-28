@@ -1,0 +1,11 @@
+digraph "Text::setColour"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Text::setColour",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="OpenGLWidget::initializeGL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_open_g_l_widget.html#a570df546f7206455c57addb624906576",tooltip="the virtual initialize class is called once when the window is created and we have a valid GL context..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Text::Text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text.html#a71c71bad833eccb26357945fc10fd085",tooltip="ctor must pass in a ready constructed QFont make sure the size and emphasis is set before doing this ..."];
+}

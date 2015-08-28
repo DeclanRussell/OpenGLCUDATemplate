@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Text::FontChar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_text_1_1_font_char.html",tooltip="a structure to hold the font char texture id and the vao. The vao for each font will be a different s..."];
+}

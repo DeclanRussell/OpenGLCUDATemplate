@@ -1,0 +1,170 @@
+\documentclass{article}
+\usepackage{epsfig}
+\pagestyle{empty}
+\begin{document}
+\[ \rho\frac{du}{dt}=-\bigtriangledown\rho+\mu\bigtriangledown^2 u + f \]
+\pagebreak
+
+$\rho$
+\pagebreak
+
+$\frac{du}{dt}$
+\pagebreak
+
+\[ -\bigtriangledown\rho \]
+\pagebreak
+
+\[ \mu\bigtriangledown^2 u \]
+\pagebreak
+
+$\mu$
+\pagebreak
+
+\[ f \]
+\pagebreak
+
+\[ \rho(x_i)= \sum\limits_{j}m_j W_{default}(x_i-x_j,h) \]
+\pagebreak
+
+$m$
+\pagebreak
+
+$W$
+\pagebreak
+
+\[ p_i = k(\rho_i - \rho_0) \]
+\pagebreak
+
+$k$
+\pagebreak
+
+$\rho_i$
+\pagebreak
+
+$\rho_0$
+\pagebreak
+
+\[ f_i^{pressure} = -\sum\limits_{i\neq j}p_j\frac{m_j}{\rho_j}\bigtriangledown W_{pressure}(x_i-x_j,h) \]
+\pagebreak
+
+$j$
+\pagebreak
+
+$i$
+\pagebreak
+
+$m_j$
+\pagebreak
+
+$\rho_j$
+\pagebreak
+
+\[ f_i^{pressure} = -\sum\limits_{i\neq j}(\frac{p_i}{\rho_i^2} + \frac{p_j}{\rho_j^2})m_j\bigtriangledown W_{pressure}(x_i-x_j,h) \]
+\pagebreak
+
+\[ f_i^{viscosity} = \mu\sum\limits_{i\neq j}(u_j-u_i)\bigtriangledown^2 W_{viscosity}(x_i-x_j,h) \]
+\pagebreak
+
+\[ v_i = v_i + \epsilon\sum\limits_j\frac{2m_j}{\rho_i+\rho_j}(v_j-v_i)W_{default}(x_i-x_j,h) \]
+\pagebreak
+
+$\epsilon$
+\pagebreak
+
+$f$
+\pagebreak
+
+$W_{default}$
+\pagebreak
+
+\[ \newcommand{\twopartdef}[4] { \left\{ \begin{array}{ll} #1 & \mbox{if } #2 \\ #3 & \mbox{if } #4 \end{array} \right. } W_{default}(r,h) = \frac{315}{64\pi h^9}\twopartdef{(h^2-||r||^2)^3}{0\leq ||r|| <h}{0}{||r||>h} \]
+\pagebreak
+
+$r$
+\pagebreak
+
+$h$
+\pagebreak
+
+\[ W_{pressure}(r,h) = W_{spikey}(r,h) = -\frac{45}{\pi h^6} \frac{r}{||r||}(h-||r||)^2 \]
+\pagebreak
+
+\[ W_{viscosity}(r,h) = -\frac{45}{\pi h^6}r(h-||r||) \]
+\pagebreak
+
+\[ u = u + adt \]
+\pagebreak
+
+\[ x = x + udt \]
+\pagebreak
+
+$x$
+\pagebreak
+
+$u$
+\pagebreak
+
+$a$
+\pagebreak
+
+$dt$
+\pagebreak
+
+\[ u_{t+\frac{1}{2} \triangle t} = u_{t- \frac{1}{2} \triangle t} + \triangle t a_t \]
+\pagebreak
+
+\[ u_{t-\frac{1}{2} \triangle t} = u_0 - \frac{1}{2}\triangle t a_0 \]
+\pagebreak
+
+\[ x_{t+\frac{1}{2} \triangle t} = x_t - \triangle tu_{t+\frac{1}{2} \triangle t} \]
+\pagebreak
+
+$n$
+\pagebreak
+
+$O(n^2)$
+\pagebreak
+
+$O(n)$
+\pagebreak
+
+\[ p_n = p/s_g \]
+\pagebreak
+
+\[ r = s_g/h \]
+\pagebreak
+
+\[ p_g = \lfloor p_n*r \rfloor \]
+\pagebreak
+
+\[ idx = p_{gx}*r^2 + p_{gy}*r +p_{gz} \]
+\pagebreak
+
+$p$
+\pagebreak
+
+$s_g$
+\pagebreak
+
+\[ neighbour idx = idx + (dx*r^2 + dy*r + dz) \]
+\pagebreak
+
+$dx,dy$
+\pagebreak
+
+$dz$
+\pagebreak
+
+$\frac{315}{64\pi h^9}$
+\pagebreak
+
+$\frac{p_i}{\rho_i^2}$
+\pagebreak
+
+\[ p1 = \frac{p_i}{\rho_i^2} \]
+\pagebreak
+
+\[ f_i^{pressure} = -m_j\sum\limits_{i\neq j}(p1 + \frac{p_j}{\rho_j^2})\bigtriangledown W_{pressure}(x_i-x_j,h) \]
+\pagebreak
+
+\end{document}

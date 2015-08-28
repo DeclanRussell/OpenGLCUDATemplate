@@ -1,0 +1,6 @@
+digraph "Camera"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Camera\n|- m_position\l- m_up\l- m_projectionMatrix\l- m_viewMatrix\l- m_aspect\l- m_fov\l- m_near\l- m_far\l|+ Camera()\l+ Camera()\l+ ~Camera()\l+ setPosition()\l+ lookAt()\l+ getViewMatrix()\l+ setProjectionMatrix()\l+ getProjectionMatrix()\l+ setShape()\l+ setShape()\l+ getNear()\l+ getFar()\l+ getAspect()\l+ getFOV()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

@@ -1,0 +1,14 @@
+digraph "OpenGLWidget"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{OpenGLWidget\n|- m_currentTime\l- m_modelMatrix\l- m_normalMatrix\l- m_mouseGlobalTX\l- m_modelPos\l- m_spinXFace\l- m_spinYFace\l- m_rotate\l- m_translate\l- m_origX\l- m_origY\l- m_origXPos\l- m_origYPos\l- m_pan\l|+ OpenGLWidget()\l+ ~OpenGLWidget()\l+ initializeGL()\l+ paintGL()\l+ resizeGL()\l+ keyPressEvent()\l+ mouseMoveEvent()\l+ mouseReleaseEvent()\l+ mousePressEvent()\l+ wheelEvent()\l+ timerEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{QGLWidget\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -m_cam" ,arrowhead="odiamond"];
+  Node3 [label="{Camera\n|- m_position\l- m_up\l- m_projectionMatrix\l- m_viewMatrix\l- m_aspect\l- m_fov\l- m_near\l- m_far\l|+ Camera()\l+ Camera()\l+ ~Camera()\l+ setPosition()\l+ lookAt()\l+ getViewMatrix()\l+ setProjectionMatrix()\l+ getProjectionMatrix()\l+ setShape()\l+ setShape()\l+ getNear()\l+ getFar()\l+ getAspect()\l+ getFOV()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_camera.html"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -m_text" ,arrowhead="odiamond"];
+  Node4 [label="{Text\n|- m_characters\l|+ Text()\l+ ~Text()\l+ renderText()\l+ setScreenSize()\l+ setColour()\l+ setTransform()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text.html"];
+  Node5 -> Node4 [color="grey25",fontsize="10",style="solid",label=" -m_textShader" ,arrowhead="odiamond"];
+  Node5 [label="{ShaderProgram\n|- m_programID\l|+ ShaderProgram()\l+ ~ShaderProgram()\l+ attachShader()\l+ bindFragDataLocation()\l+ link()\l+ use()\l+ getProgramID()\l+ getAttribLoc()\l+ getUniformLoc()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_shader_program.html"];
+}

@@ -1,0 +1,11 @@
+digraph "GLTextureLib"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GLTextureLib\n|- m_currentTextureName\l- m_textures\l|+ addTexture()\l+ addCubeMap()\l+ operator[]()\l+ operator[]()\l+ ~GLTextureLib()\l+ destroy()\l+ getInstance()\l- GLTextureLib()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -m_instance" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -m_currentTexture" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{GLTexture\n|- m_isCubeMap\l- m_level\l- m_internalFormat\l- m_width\l- m_height\l- m_border\l- m_format\l- m_type\l|+ GLTexture()\l+ GLTexture()\l+ ~GLTexture()\l+ setTexParamiteri()\l+ setTexParamiterf()\l+ resize()\l+ setData()\l+ setData()\l+ bind()\l+ bind()\l+ unbind()\l+ getHandle()\l- GLTexture()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_g_l_texture.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{AbstractOpenGlObject\n|# m_handle\l# m_target\l|+ AbstractOpenGlObject()\l+ ~AbstractOpenGlObject()\l+ bind()\l+ unbind()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_abstract_open_gl_object.html"];
+}

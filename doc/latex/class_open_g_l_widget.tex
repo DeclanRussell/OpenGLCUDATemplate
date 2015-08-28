@@ -1,0 +1,162 @@
+\hypertarget{class_open_g_l_widget}{\section{Open\-G\-L\-Widget Class Reference}
+\label{class_open_g_l_widget}\index{Open\-G\-L\-Widget@{Open\-G\-L\-Widget}}
+}
+
+
+Basic Qt widget that holds a Open\-G\-L context.  
+
+
+
+
+{\ttfamily \#include $<$Open\-G\-L\-Widget.\-h$>$}
+
+
+
+Inheritance diagram for Open\-G\-L\-Widget\-:
+
+
+Collaboration diagram for Open\-G\-L\-Widget\-:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_g_l_widget_a60b9008fd7762190918d5e2528a57248}{Open\-G\-L\-Widget} (const Q\-G\-L\-Format \-\_\-format, Q\-Widget $\ast$\-\_\-parent=0)
+\begin{DoxyCompactList}\small\item\em ctor for our N\-G\-L drawing class \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a293847f6a7e6c40344a1acfca3e9eb51}{\hyperlink{class_open_g_l_widget_a293847f6a7e6c40344a1acfca3e9eb51}{$\sim$\-Open\-G\-L\-Widget} ()}\label{class_open_g_l_widget_a293847f6a7e6c40344a1acfca3e9eb51}
+
+\begin{DoxyCompactList}\small\item\em dtor must close down and release Open\-G\-L resources \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a570df546f7206455c57addb624906576}{void \hyperlink{class_open_g_l_widget_a570df546f7206455c57addb624906576}{initialize\-G\-L} ()}\label{class_open_g_l_widget_a570df546f7206455c57addb624906576}
+
+\begin{DoxyCompactList}\small\item\em the virtual initialize class is called once when the window is created and we have a valid G\-L context use this to setup any default G\-L stuff \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a260a543726f601659cbd1809b90f9e4b}{void \hyperlink{class_open_g_l_widget_a260a543726f601659cbd1809b90f9e4b}{paint\-G\-L} ()}\label{class_open_g_l_widget_a260a543726f601659cbd1809b90f9e4b}
+
+\begin{DoxyCompactList}\small\item\em this is called everytime we want to draw the scene \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a55cf4659a7f10207fb6ab3fcf9273abc}{void \hyperlink{class_open_g_l_widget_a55cf4659a7f10207fb6ab3fcf9273abc}{resize\-G\-L} (const int \-\_\-w, const int \-\_\-h)}\label{class_open_g_l_widget_a55cf4659a7f10207fb6ab3fcf9273abc}
+
+\begin{DoxyCompactList}\small\item\em called to resize the window \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a2e7ec0372fb6b2a0eb85a9524cfdd7fd}{void \hyperlink{class_open_g_l_widget_a2e7ec0372fb6b2a0eb85a9524cfdd7fd}{key\-Press\-Event} (Q\-Key\-Event $\ast$\-\_\-event)}\label{class_open_g_l_widget_a2e7ec0372fb6b2a0eb85a9524cfdd7fd}
+
+\begin{DoxyCompactList}\small\item\em keyboard press event \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_aa6d543f552c813df3b3a78dc5c4899fd}{void \hyperlink{class_open_g_l_widget_aa6d543f552c813df3b3a78dc5c4899fd}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$\-\_\-event)}\label{class_open_g_l_widget_aa6d543f552c813df3b3a78dc5c4899fd}
+
+\begin{DoxyCompactList}\small\item\em mouse move \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_aa3f5541e5da2d5c52ca16b99f40dfd75}{void \hyperlink{class_open_g_l_widget_aa3f5541e5da2d5c52ca16b99f40dfd75}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$\-\_\-event)}\label{class_open_g_l_widget_aa3f5541e5da2d5c52ca16b99f40dfd75}
+
+\begin{DoxyCompactList}\small\item\em mouse button release \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_adaab83f0bed689b0765d42b6ae760220}{void \hyperlink{class_open_g_l_widget_adaab83f0bed689b0765d42b6ae760220}{mouse\-Press\-Event} (Q\-Mouse\-Event $\ast$\-\_\-event)}\label{class_open_g_l_widget_adaab83f0bed689b0765d42b6ae760220}
+
+\begin{DoxyCompactList}\small\item\em mouse button press \end{DoxyCompactList}\item 
+void \hyperlink{class_open_g_l_widget_a0682546d360b7ce9ae1dce31a090cfca}{wheel\-Event} (Q\-Wheel\-Event $\ast$\-\_\-event)
+\begin{DoxyCompactList}\small\item\em this method is called everytime the mouse wheel is moved inherited from Q\-Object and overridden here. \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a11473cec64e843211458fd83f9d6ad72}{void \hyperlink{class_open_g_l_widget_a11473cec64e843211458fd83f9d6ad72}{timer\-Event} (Q\-Timer\-Event $\ast$)}\label{class_open_g_l_widget_a11473cec64e843211458fd83f9d6ad72}
+
+\begin{DoxyCompactList}\small\item\em a timer event function from the Q\-\_\-object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_open_g_l_widget_aff53bbd399436798c17c49251ece8557}{Q\-Time \hyperlink{class_open_g_l_widget_aff53bbd399436798c17c49251ece8557}{m\-\_\-current\-Time}}\label{class_open_g_l_widget_aff53bbd399436798c17c49251ece8557}
+
+\begin{DoxyCompactList}\small\item\em used for calculating framerate \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a5e85e4feff330027b7df1ef5284c3ca4}{\hyperlink{class_text}{Text} $\ast$ \hyperlink{class_open_g_l_widget_a5e85e4feff330027b7df1ef5284c3ca4}{m\-\_\-text}}\label{class_open_g_l_widget_a5e85e4feff330027b7df1ef5284c3ca4}
+
+\begin{DoxyCompactList}\small\item\em used for drawing text in open\-G\-L \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a8b0966a0fbb6d311cb9ee5ff04c793ed}{\hyperlink{class_camera}{Camera} $\ast$ \hyperlink{class_open_g_l_widget_a8b0966a0fbb6d311cb9ee5ff04c793ed}{m\-\_\-cam}}\label{class_open_g_l_widget_a8b0966a0fbb6d311cb9ee5ff04c793ed}
+
+\begin{DoxyCompactList}\small\item\em Our \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_ae89e14589647712650bdb72ead2e9380}{glm\-::mat4 \hyperlink{class_open_g_l_widget_ae89e14589647712650bdb72ead2e9380}{m\-\_\-model\-Matrix}}\label{class_open_g_l_widget_ae89e14589647712650bdb72ead2e9380}
+
+\begin{DoxyCompactList}\small\item\em Model matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_afc40d7d34edd4fc376d2aecbd1c2832a}{glm\-::mat4 \hyperlink{class_open_g_l_widget_afc40d7d34edd4fc376d2aecbd1c2832a}{m\-\_\-normal\-Matrix}}\label{class_open_g_l_widget_afc40d7d34edd4fc376d2aecbd1c2832a}
+
+\begin{DoxyCompactList}\small\item\em Normal Matrix. \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_aceead5e683b12b021872ce51be0f9b7b}{glm\-::mat4 \hyperlink{class_open_g_l_widget_aceead5e683b12b021872ce51be0f9b7b}{m\-\_\-mouse\-Global\-T\-X}}\label{class_open_g_l_widget_aceead5e683b12b021872ce51be0f9b7b}
+
+\begin{DoxyCompactList}\small\item\em Mouse transforms. \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a9b10d8acb1ae12718913821ee2b7bc33}{glm\-::vec3 \hyperlink{class_open_g_l_widget_a9b10d8acb1ae12718913821ee2b7bc33}{m\-\_\-model\-Pos}}\label{class_open_g_l_widget_a9b10d8acb1ae12718913821ee2b7bc33}
+
+\begin{DoxyCompactList}\small\item\em model pos \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a1848ad10325dab2718baaf198f5fcb26}{float \hyperlink{class_open_g_l_widget_a1848ad10325dab2718baaf198f5fcb26}{m\-\_\-spin\-X\-Face}}\label{class_open_g_l_widget_a1848ad10325dab2718baaf198f5fcb26}
+
+\begin{DoxyCompactList}\small\item\em Spin face x. \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_aa55e5bc132904a919fc5016d5b6631ea}{float \hyperlink{class_open_g_l_widget_aa55e5bc132904a919fc5016d5b6631ea}{m\-\_\-spin\-Y\-Face}}\label{class_open_g_l_widget_aa55e5bc132904a919fc5016d5b6631ea}
+
+\begin{DoxyCompactList}\small\item\em Sping face y. \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a14f64d86c5469d067dd8244bdcc7e00c}{bool \hyperlink{class_open_g_l_widget_a14f64d86c5469d067dd8244bdcc7e00c}{m\-\_\-rotate}}\label{class_open_g_l_widget_a14f64d86c5469d067dd8244bdcc7e00c}
+
+\begin{DoxyCompactList}\small\item\em rotate bool \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_abe86ea637ceacca131e6e0de42d5800f}{bool \hyperlink{class_open_g_l_widget_abe86ea637ceacca131e6e0de42d5800f}{m\-\_\-translate}}\label{class_open_g_l_widget_abe86ea637ceacca131e6e0de42d5800f}
+
+\begin{DoxyCompactList}\small\item\em translate bool \end{DoxyCompactList}\item 
+\hypertarget{class_open_g_l_widget_a214ce7f703333d6dc676cac7e0d49776}{int {\bfseries m\-\_\-orig\-X}}\label{class_open_g_l_widget_a214ce7f703333d6dc676cac7e0d49776}
+
+\item 
+\hypertarget{class_open_g_l_widget_a8703a19c51f242c7557ba6b37e893988}{int {\bfseries m\-\_\-orig\-Y}}\label{class_open_g_l_widget_a8703a19c51f242c7557ba6b37e893988}
+
+\item 
+\hypertarget{class_open_g_l_widget_a1b06aed484e4dba30493c77410f4a34e}{int {\bfseries m\-\_\-orig\-X\-Pos}}\label{class_open_g_l_widget_a1b06aed484e4dba30493c77410f4a34e}
+
+\item 
+\hypertarget{class_open_g_l_widget_a7e4b345141610c5aac3b293217c17d9d}{int {\bfseries m\-\_\-orig\-Y\-Pos}}\label{class_open_g_l_widget_a7e4b345141610c5aac3b293217c17d9d}
+
+\item 
+\hypertarget{class_open_g_l_widget_abadceadac28d7b1ac66fb41e652845f8}{bool \hyperlink{class_open_g_l_widget_abadceadac28d7b1ac66fb41e652845f8}{m\-\_\-pan}}\label{class_open_g_l_widget_abadceadac28d7b1ac66fb41e652845f8}
+
+\begin{DoxyCompactList}\small\item\em bool to indicate if we want to pan our camera \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic Qt widget that holds a Open\-G\-L context. 
+
+\begin{DoxyAuthor}{Author}
+Declan Russell 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2/3/15 Initial version 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_g_l_widget_a60b9008fd7762190918d5e2528a57248}{\index{Open\-G\-L\-Widget@{Open\-G\-L\-Widget}!Open\-G\-L\-Widget@{Open\-G\-L\-Widget}}
+\index{Open\-G\-L\-Widget@{Open\-G\-L\-Widget}!OpenGLWidget@{Open\-G\-L\-Widget}}
+\subsubsection[{Open\-G\-L\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Open\-G\-L\-Widget\-::\-Open\-G\-L\-Widget (
+\begin{DoxyParamCaption}
+\item[{const Q\-G\-L\-Format}]{\-\_\-format, }
+\item[{Q\-Widget $\ast$}]{\-\_\-parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_open_g_l_widget_a60b9008fd7762190918d5e2528a57248}
+
+
+ctor for our N\-G\-L drawing class 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em parent} & the parent window to the class \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_g_l_widget_a0682546d360b7ce9ae1dce31a090cfca}{\index{Open\-G\-L\-Widget@{Open\-G\-L\-Widget}!wheel\-Event@{wheel\-Event}}
+\index{wheel\-Event@{wheel\-Event}!OpenGLWidget@{Open\-G\-L\-Widget}}
+\subsubsection[{wheel\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Open\-G\-L\-Widget\-::wheel\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Wheel\-Event $\ast$}]{\-\_\-event}
+\end{DoxyParamCaption}
+)}}\label{class_open_g_l_widget_a0682546d360b7ce9ae1dce31a090cfca}
+
+
+this method is called everytime the mouse wheel is moved inherited from Q\-Object and overridden here. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-event} & the Qt Event structure \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_open_g_l_widget_8h}{Open\-G\-L\-Widget.\-h}\item 
+src/Open\-G\-L\-Widget.\-cpp\end{DoxyCompactItemize}
